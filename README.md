@@ -1,3 +1,12 @@
+# 🎯 TL/DR - English
+A Python script to automatically translate any text copied to the clipboard into another language chosen by the user.
+The result is stored in the clipboard memory for you to paste wherever you want.<br>
+**Nutshell: copy the text in one language and paste it into another.**
+
+----------------
+
+<br><br>
+
 # 🔤 Tradutor de Clipboard
 
 Um script Python simples e eficiente para traduzir automaticamente qualquer texto copiado no clipboard para português brasileiro.
@@ -15,8 +24,7 @@ Um script Python simples e eficiente para traduzir automaticamente qualquer text
 
 ### Pré-requisitos
 
-- Python 3.12 ou superior
-- pip (gerenciador de pacotes do Python)
+- Python 3.11 ou superior
 
 ### 1. Clone ou baixe o script
 
@@ -25,7 +33,7 @@ Um script Python simples e eficiente para traduzir automaticamente qualquer text
 git clone <url-do-repositorio>
 cd clipboard-translator
 
-# Opção 2: Baixe apenas o arquivo clipboard_translator.py
+# Opção 2: Baixe apenas o arquivo clipboard_translator_geek.py
 ```
 
 ### 2. Instale as dependências
@@ -36,7 +44,7 @@ pip install pyperclip googletrans==4.0.0-rc1
 
 **Nota importante**: Use especificamente a versão `4.0.0-rc1` da googletrans para evitar problemas de compatibilidade.
 
-**ATENÇÃO:**: A biblioteca `googletrans` é uma API não oficial e gratuita para Python que implementa funcionalidades do Google Translate, permitindo detectar idiomas e traduzir textos de forma ilimitada e rápida, utilizando a API Ajax do Google Translate. Verificar a documentação em: [text](https://pypi.org/project/googletrans/)
+**ATENÇÃO:**: A biblioteca `googletrans` é uma API não oficial e gratuita para Python que implementa funcionalidades do Google Translate, permitindo detectar idiomas e traduzir textos de forma ilimitada e rápida, utilizando a API Ajax do Google Translate. Verificar a documentação em: [pypi.org/project/googletrans/](https://pypi.org/project/googletrans/)
 
 
 ### 3. (Opcional) Crie um ambiente virtual
@@ -62,7 +70,7 @@ pip install pyperclip googletrans==4.0.0-rc1
 1. **Copie qualquer texto** para o clipboard (Ctrl+C / Cmd+C)
 2. **Execute o script**:
    ```bash
-   python clipboard_translator.py
+   python clipboard_translator_geek.py
    ```
 3. **Veja a tradução** na tela e ela será automaticamente copiada para o clipboard
 4. **Cole onde quiser** (Ctrl+V / Cmd+V)
@@ -137,18 +145,21 @@ translator = ClipboardTranslator(target_language='fr')  # Francês
 ```batch
 @echo off
 cd /d "C:\caminho\para\seu\script"
-python clipboard_translator.py
+python clipboard_translator_geek.py
 pause
 ```
 
 2. Crie um atalho e configure uma tecla de acesso rápido
 
+----------------
 
 ### Windows - Atalho de Teclado e instalação das dependências em ambiente virtual
 
-***Importante***: Desse modo instala as bibliotecas (dependências) de forma isolada e não global.
+***Importante***: Desse modo instala as dependências de forma isolada e não global - melhor forma de usar.
+<br>
+Arquivos `.bat` para uso já pronto na pasta `./automation_bat`
 
-1. Crie um arquivo `setup_clipboard_translator.bat` para fazer o setup do ambiente virtual na pasta que tem o script:
+1. Crie um arquivo `setup_clipboard_translator_geek.bat` para fazer o setup do ambiente virtual na pasta que tem o script:
 
 ```batch
 @echo off
@@ -183,14 +194,14 @@ pip install pyperclip googletrans==4.0.0-rc1
 echo.
 echo ✅ Configuracao concluida!
 echo.
-echo Para usar o tradutor, execute: clipboard_translator.bat
+echo Para usar o tradutor, execute: clipboard_translator_geek.bat
 echo.
 pause
 ```
 
-2. Execute o setup_clipboard_translator.bat - ***só precisa fazer isso uma única vez***
+2. Execute o setup_clipboard_translator_geek.bat - ***só precisa fazer isso uma única vez***
 
-3. Crie um arquivo `clipboard_translator.bat` com o script de traduzir:
+3. Crie um arquivo `clipboard_translator_geek.bat` com o script de traduzir:
 
 ```batch
 @echo off
@@ -203,7 +214,7 @@ if exist "translator_env\Scripts\activate" (
 )
 
 REM Executar script
-python app-translator.py
+python clipboard_translator_geek.py
 
 echo.
 pause
@@ -213,11 +224,13 @@ pause
 
 ***Atenção: todos os arquivos devem estar na mesma pasta**
 
+----------------
+
 ### Linux/Mac - Alias
 
 Adicione ao seu `.bashrc` ou `.zshrc`:
 ```bash
-alias translate="python /caminho/para/clipboard_translator.py"
+alias translate="python /caminho/para/clipboard_translator_geek.py"
 ```
 
 ### Script de Execução Rápida
@@ -226,8 +239,10 @@ Crie um script `translate.sh` (Linux/Mac):
 ```bash
 #!/bin/bash
 cd "$(dirname "$0")"
-python3 clipboard_translator.py
+python3 clipboard_translator_geek.py
 ```
+
+----------------
 
 ## 🐛 Solução de Problemas
 
@@ -252,6 +267,8 @@ sudo apt-get install xclip
 sudo apt-get install xsel
 ```
 
+----------------
+
 ## 📝 Exemplos de Uso
 
 ### Tradução de Documentos
@@ -268,6 +285,8 @@ sudo apt-get install xsel
 1. Copie comentários em outros idiomas
 2. Execute o script
 3. Substitua pelos comentários traduzidos
+
+----------------
 
 ## 🤝 Contribuição
 
@@ -286,9 +305,11 @@ Este projeto está sob a licença MIT. Veja o arquivo `LICENSE` para mais detalh
 ## ⭐ Suporte
 
 Se este script foi útil para você, considere dar uma ⭐ no repositório!
+[https://github.com/geekknight/clipboard_translator_geek/](https://github.com/geekknight/clipboard_translator_geek/
 
-Para reportar bugs ou sugerir melhorias, abra uma [issue](https://github.com/geekknight/clipboard-translator/issues).
+Para reportar bugs ou sugerir melhorias, abra uma [issue](https://github.com/geekknight/clipboard_translator_geek/issues).
 
 ---
 
-**Desenvolvido com ❤️ para facilitar traduções rápidas e eficientes.**
+**Desenvolvido por geekknight e claude para facilitar traduções rápidas e eficientes.** <br>
+**Developed by geekknight and claude to facilitate fast and efficient translations.**
