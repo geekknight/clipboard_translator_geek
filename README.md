@@ -30,8 +30,8 @@ Um script Python simples e eficiente para traduzir automaticamente qualquer text
 
 ```bash
 # Opção 1: Clone o repositório (se aplicável)
-git clone <url-do-repositorio>
-cd clipboard-translator
+git clone https://github.com/geekknight/clipboard_translator_geek.git
+cd clipboard_translator_geek
 
 # Opção 2: Baixe apenas o arquivo clipboard_translator_geek.py
 ```
