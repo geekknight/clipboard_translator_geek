@@ -157,7 +157,7 @@ pause
 
 ***Importante***: Desse modo instala as dependências de forma isolada e não global - melhor forma de usar.
 <br>
-Arquivos `.bat` para uso já pronto na pasta `./automation_bat`
+Arquivos `.bat` para uso já prontos na pasta para uso.
 
 1. Crie um arquivo `setup_clipboard_translator_geek.bat` para fazer o setup do ambiente virtual na pasta que tem o script:
 
