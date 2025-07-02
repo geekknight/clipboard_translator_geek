@@ -1,7 +1,7 @@
 # 🎯 TL/DR - English
 A Python script to automatically translate any text copied to the clipboard into another language chosen by the user.
 The result is stored in the clipboard memory for you to paste wherever you want.<br>
-**Nutshell: copy the text in one language and paste it into another.**
+**In a Nutshell: copy the text in one language and paste it into another.**
 
 ----------------
 
